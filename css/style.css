@@ -8,12 +8,12 @@
 
 @import url(/css/home/depoimento.css);
 @import url(/css/home/introducao.css);
-@import url(/css/global/menu.css);
-@import url(/css/home/parceiros.css);
-@import url(/css/home/tecnologia.css);
-@import url(/css/home/bicicleta.css);
-@import url(/css/home/seguro.css);
-@import url(/css/global/footer.css);
+@import "./global/menu.css";
+@import url(./home/parceiros.css);
+@import url(./home/tecnologia.css);
+@import url(./home/bicicleta.css);
+@import url(./home/seguro.css);
+@import url(./global/footer.css);
 
 @import url(/css/termos/termos.css);
 @import url(/css/bicicletas/bicicletas.css);
