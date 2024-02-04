@@ -6,9 +6,9 @@
 @import url(./utilidades/formulario.css);
 
 
-@import url(/home/depoimento.css);
-@import url(/home/introducao.css);
-@import "./global/menu.css";
+@import url(./home/depoimento.css);
+@import url(./home/introducao.css);
+@import url(./global/menu.css);
 @import url(./home/parceiros.css);
 @import url(./home/tecnologia.css);
 @import url(./home/bicicleta.css);
