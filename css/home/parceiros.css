@@ -1,0 +1,49 @@
+.parceiros h2{
+    margin: 80px ;
+}
+
+.lista_parceiros{
+    max-width: 1400px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 60px;
+}
+/* Para alinhar os objtos ao centro */
+.parceiros li{
+    display: flex;
+    padding: 32px;
+    border-left: 1px solid #b2b2b2;
+   
+}
+.parceiros li:first-child,
+.parceiros li:nth-child(5){
+    border-left: none;
+}
+/* ou parceirosli:nth-child(n +5)  => aparti do primeira item */
+.parceiros li:nth-child(5),
+.parceiros li:nth-child(6),
+.parceiros li:nth-child(7),
+.parceiros li:nth-child(8){
+    border-top:1px solid #b2b2b2;
+}
+.parceiros img{
+    margin: auto;
+}
+@media(max-width:800px){
+    .parceiros h2{
+        margin: 50px;
+    }
+    .lista_parceiros{
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+    }
+    .parceiros li:nth-child(n+3){
+        border-top:1px solid #b2b2b2;
+    }
+    .parceiros li:nth-child(3),
+    .parceiros li:nth-child(7){
+        border-left: none;
+
+    }
+    
+}

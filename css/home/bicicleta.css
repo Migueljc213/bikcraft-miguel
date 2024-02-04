@@ -1,0 +1,50 @@
+.bicicletas-bg{
+    padding: 120px 0px;
+}
+.bicicletas-bg h2{
+    margin-bottom: 40px;
+}
+.bicicletas-grid{
+    display: flex;
+    gap:40px;
+    overflow-x: auto; 
+    /* overflow = scroll,serve para criar aquela barrinha pro lado
+    auto faz a mesma função, só quando necessario */
+}
+.bicicletas-grid li {
+    min-width: 280px
+}
+.bicicletas-grid h3{
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.bicicletas-grid h3::before{
+    content: '';
+    width: 12px;
+    height: 8px;
+    background: #ffbb00;
+    display:inline-block;
+    margin-right: 8px;
+    transition: width 0.2s;
+
+}
+.bicicletas-grid a:hover h3::before{
+    width:24px
+}
+.bicicletas-grid img{
+    margin-bottom: 30px;
+}
+.bicicletas-grid a{
+    display: block;
+}
+.bicicletas-grid p{
+    padding-left: 40px;
+}
+@media(max-width:800px){
+    .bicicletas-grid {padding-bottom: 60px;}
+    .bicicletas-grid ul{
+        gap:20px
+    }
+}

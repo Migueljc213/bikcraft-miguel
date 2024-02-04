@@ -1,0 +1,56 @@
+.lojas{
+    background-color: #EDEDED;
+    padding-bottom: 120px;
+}
+
+.lojas-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px
+}
+.lojas h2{
+    padding: 60px 0px;
+}
+.lojas img{
+    border-radius: 4px 4px 0px 0px;
+}
+.lojas-bg{
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rbga(0,0,0,.1);
+}
+.lojas-informacao{
+    gap:32px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+}
+.lojas-informacao h3,.lojas-informacao span{
+    grid-column: 1/-1;
+}
+.lojas-informacao span{
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+.lojas-local{
+    margin-bottom: 8px;
+    padding-left: 8px;
+    border-left: 2px solid #EDEDED;
+}
+
+
+
+@media(max-width:900px){
+    .lojas-informacao{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:800px){
+    .lojas-grid{
+        grid-template-columns: 1fr;
+    }
+    .lojas-informacao{
+        grid-template-columns: 1fr 1fr;
+    }
+}

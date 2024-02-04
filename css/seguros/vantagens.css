@@ -1,0 +1,25 @@
+.vantagens-bg{
+    background-color: #000;
+}
+.vantagens_conteudo{
+    padding: 120px 20px;
+}
+.vantagens_conteudo h1{
+    margin-bottom: 80px;
+}
+.lista_vantanges{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,max-content));
+    gap:40px 80px;
+}
+.lista_vantanges h2,.lista_vantanges img{
+    margin-bottom: 12px;
+}
+.lista_vantanges p{
+    font-size: 0.9rem;
+}
+@media(max-width:800px){
+    .vantagens_conteudo{
+        padding: 60px 20px;
+    }
+}

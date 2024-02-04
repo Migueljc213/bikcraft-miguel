@@ -1,0 +1,64 @@
+.introducao-bg{
+    background-color: #000;
+    color: #FFF;
+    box-shadow:  inset 0 -120px 0 #FFF ;
+}
+
+.introducao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+}
+.introducao_text{
+    align-self: end;
+    padding-bottom: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: start;
+    place-items: start; /*esse alinha o padding torto*/
+    gap:30px;
+   
+}
+
+.introducao img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.introducao h1{
+    align-self: center;
+    margin-bottom: 32px;     
+}
+.introducao p{
+     margin-bottom: 1.5;
+}
+
+
+
+@media(max-width:1200){
+    .introducao h1{
+        font-size: 48px;
+    }
+    .introducao p{
+        font-size: 18px;
+    }
+}
+@media(max-width:800px){
+    .introducao-bg{
+        background-color: #111111;
+        padding-top: 40px;
+        box-shadow:  inset 0 -60px 0 #FFF ;
+       
+    }
+    .introducao
+    {grid-template-columns: 1fr;}
+    .introducao_text{
+        padding-bottom: 0px;
+    }
+    .introducao h1{
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+}
+
