@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="./css/style.css" as="style">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
     <meta name="description"
         content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.">
     <title>Bikcraft - Biciclesta Elétricas</title>
@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -30,16 +31,16 @@
             </nav>
         </div>
     </header>
-    <main class="introducao-bg">
-        <div class="introducao container">
+    <main class="introducao-bg" >
+        <div class="introducao container" >
             <div class="introducao_text">
-                <h1 class="font-1-xxl">Bicicletas feitas sob medida.</h1>
-                <p class="cor_cinza font-2-l">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para
+                <h1  data-anime="200" class="font-1-xxl fadeInDown" >Bicicletas feitas sob medida.</h1 >
+                <p data-anime="400" class="cor_cinza font-2-l fadeInDown">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para
                     você. Explore o mundo na sua velocidade com a Bikcraft<span class=".cor_amarela">.</span></p>
-                <a class="botao font-1-s" href="./bicicletas.html">ESCOLHA A SUA</a>
+                <a data-anime="600" class="botao font-1-s fadeInDown" href="./bicicletas.html">ESCOLHA A SUA</a>
             </div>
             <div class="introducao_img">
-                <picture>
+                <picture data-anime="800" class="fadeInDown">
                     <source media="(max-width:800px)" srcset="./img/bicicletas/nimbus.jpg">
                     <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta">
                 </picture>
@@ -148,7 +149,8 @@
                 <a href="./orcamento.html" class="botao">inscreve-se já</a>
             </div>
     </article>
-   
+
+<script src="./script.js"></script>
 </body>
 <footer>
     <img src="./img/bikcraft.svg">
