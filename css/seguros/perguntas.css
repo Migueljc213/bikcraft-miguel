@@ -51,7 +51,7 @@
     max-width: 70ch;
     
 }
-.perguntas dd.ativa{
+.js .perguntas dd.ativa{
     display: block;
 }
 @media(max-width:800px){
